@@ -17,3 +17,6 @@ def main(filename):
     stream = combine(filename)
     nameFile = click.prompt('Masukan Nama File keluaran yang diinginkan ', type=str)
     write2file(stream, nameFile+'.mseed')
+
+if __name__ == '__main__':
+    main()
