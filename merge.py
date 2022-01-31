@@ -6,6 +6,7 @@ def combine(filelist):
     st = Stream()
     for item in filelist:
         st += read(item)
+        st.merge()
     return st
 
 def write2file(stream, filename):
